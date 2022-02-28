@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>AUTH PAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+.card {
+  width: 200px;
+  background-color: white;
+  display: inline-block;
+  left: 20%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+<body style="background-color:#c4fa08;">
+
+
+
+<div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="about.html"><i class="fa fa-fw fa-info-circle"></i> About</a> 
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+</div>
+
+<!--<img src="backgroundimage1.jpg" style="z-index: -1; width: 100%; position: absolute;  filter: blur(2px);
+  -webkit-filter: blur(2px); "/>-->
+
+
+
+
+  <div style="left:10%; position: absolute;">
+<div class="card bg-info" style="align:right; margin:30px; padding:30px; width:260px;">
+  <img src="images/adminimage.png" alt="adminx" style="width:200px;" >
+  <div class="container">
+    <h4><b>Donor Login  <a href="donorlogin/donorlogin.html"></h4> <button class="btn-warning">Donor Login</button></a></b>
+    <hr>
+
+    <a class="text-white" href="accountcreate/createdonaracc.php"><p>Create Donor Account</p></a>
+  </div>
+</div>
+
+<div class="card bg-info" style="align:right; margin:30px; padding:30px; width:260px;">
+  <img src="images/userimage.png" alt="user" style="width:200px;">
+  <div class="container">
+    <h4><b>Seeker Login  <a href="userlogin/userlogin.html"> </h4><button class="btn-warning">Seeker Login</button></b></a> 
+<hr>
+    <a class="text-white"href="accountcreate/createuseracc.php"><p> Create Seeker Account</p></a>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html> 
