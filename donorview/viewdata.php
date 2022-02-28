@@ -3,7 +3,10 @@
 <title>CSFB-D.AC View Pg</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body>
-    <button><a href="../donorlogin/authentication.php" class="btn btn-info">donor view</a></button>
+     <!--<button><a href="../donorlogin/authentication.php" class="btn btn-info">donor view</a></button> 
+     <input type="button" value="Go Back" onclick="history.go(-1)">  -->
+     <button><a onclick="history.go(-1)" class="btn btn-info">Go Back to Donor View / View Last Post</a></button> 
+
 
 <?php
 echo "<table class='table table-striped table-primary'>";
@@ -27,10 +30,10 @@ class TableRows extends RecursiveIteratorIterator {
     }
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dbfood";
+$servername = "csfb-db.mysql.database.azure.com:3306";  
+$username = "naks";  
+$password = "pass007!";  
+$dbname = "dbfood";  
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

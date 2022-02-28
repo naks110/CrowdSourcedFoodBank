@@ -6,11 +6,11 @@
         //to prevent from mysqli injection  
         $username = stripcslashes($username);  
         $password = stripcslashes($password);  
-        $username = mysqli_real_escape_string($con, $username);  
-        $password = mysqli_real_escape_string($con, $password);  
+        $username = mysqli_real_escape_string($conn, $username);  
+        $password = mysqli_real_escape_string($conn, $password);  
       
         $sql = "select *from userlogin where username = '$username' and password = '$password'";  
-        $result = mysqli_query($con, $sql);  
+        $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
           
@@ -51,10 +51,10 @@ class TableRows extends RecursiveIteratorIterator {
     }
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dbfood";
+$servername = "csfb-db.mysql.database.azure.com:3306";  
+$username = "naks";  
+$password = "pass007!";  
+$dbname = "dbfood"; 
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

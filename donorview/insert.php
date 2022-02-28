@@ -8,21 +8,18 @@
 
 <body class="bg-warning">
 	<center>
-		<a href="../donorlogin/authentication.php" class="btn btn-info"><h5>go back</h5></a>
+		<!--<input type="button" value="Go Back" onclick="history.go(-1)"> 
+		<button><a onclick="history.go(-1)" class="btn btn-info">Go Back to Repost/View Last Post</a></button> -->
+		 
+		<a onclick="history.go(-1)" class="btn btn-info"><h5>Go back to Donor View</h5></a>
 		<a href="viewdata.php" class="btn btn-info"><h5>show entries</h5></a>
 		<?php
 
-		// servername => localhost
-		// username => root
-		// password => empty
-		// database name => dbfood
-		$conn = mysqli_connect("localhost", "root", "", "dbfood");
-		
-		// Check connection
-		if($conn === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
+$conn = mysqli_init();
+mysqli_real_connect($conn, "csfb-db.mysql.database.azure.com", "naks", "pass007!", "dbfood", 3306);
+if (mysqli_connect_errno($conn)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
 		
 		// Taking all 5 values from the form data(input)
 		$item_name = $_REQUEST['item_name'];

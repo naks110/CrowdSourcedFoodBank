@@ -20,17 +20,11 @@
 
 		<?php
 
-		// servername => localhost
-		// username => root
-		// password => empty
-		// database name => dbfood
-		$conn = mysqli_connect("localhost", "root", "", "dbfood");
-		
-		// Check connection
-		if($conn === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
+$conn = mysqli_init();
+mysqli_real_connect($conn, "csfb-db.mysql.database.azure.com", "naks", "pass007!", "dbfood", 3306);
+if (mysqli_connect_errno($conn)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
 		
 		// Taking all 5 values from the form data(input)
 		$username = $_REQUEST['username'];
