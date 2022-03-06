@@ -8,8 +8,8 @@ Hosted on Microsoft Azure.
 
 You may use the following credentials to login quickly (you still can create new accounts):\
 DONOR A/C-\
-Username: test1\
-Password: test1\\
+Username: test1
+Password: test1
 
 SEEKER A/C-\
 Username: usr1\
