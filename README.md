@@ -17,7 +17,7 @@ SEEKER A/C-
 Username: usr1  
 Password: usr1
 
-N.B.: Azure Metric Alerts are configured to me alert me via SMS & email whenever HTTP requests >=1 every 1 min window, i.e. I get website visitor alerts everytime someone loads my site. These alerts ensure that I can be informed when to revisit my DB to detect malicious activity, for eg. if someone tries any tampering (DoS or exceeding my storage quota).  
+N.B.: Azure Metric Alerts are configured to me alert me of any website activity/visitor (HTTP requests)
 Already, Data Sanitization is performed to prevent SQL Injection Attacks.  
 
 This also helps me guess when evaluators have visited my site, how thoroughly my project was evaluated (no of HTTP requests), and how long till my project gets accepted :)
