@@ -8,7 +8,7 @@ This is to prevent browser warnings and also apparently I am observing improved 
 Built using PHP, HTML, CSS & MySQL.
 Hosted on Microsoft Azure.
 
-You may use the following credentials to login quickly (you still can create new accounts):  
+You may use the following credentials to login quickly (you are welcome to create new accounts too if needed):  
 DONOR A/C-  
 Username: test1  
 Password: test1  
