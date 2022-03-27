@@ -1,3 +1,4 @@
+<?php error_reporting(0);  ob_start(); ?>
 <?php      
     include('connection.php');  
     $username = $_POST['user'];  
@@ -18,7 +19,7 @@
             echo "<h1><center> Welcome to Seeker View. Please see list</center></h1>";  
         }  
         else{  
-            header("Location: ../error.html"); 
+            header("Location:../error.html"); 
              exit(); 
         }     
 ?>  

@@ -1,4 +1,4 @@
-<?php error_reporting(0); ?>
+<?php error_reporting(0);  ob_start(); ?>
 <?php      
 
    include('connection.php');  
@@ -22,8 +22,8 @@
             echo "<h1><center> Donor View </center></h1>. "  ;
         }  
         else{  
-            header("Location: ../error.html"); 
-             exit();
+            header("Location:../error.html");
+            exit();
         }     
 
 ?>  
