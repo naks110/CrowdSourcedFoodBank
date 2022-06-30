@@ -17,7 +17,9 @@ SEEKER A/C-
 Username: usr1  
 Password: usr1
 
-N.B.: Azure Metric Alerts are configured to me alert me of any website activity/visitor (HTTP requests)
-Already, Data Sanitization is performed to prevent SQL Injection Attacks.  
+N.B.: To conserve my Azure student credits, I have stopped the DB & the Web App has been scaled down to Free F1 tier.
+If webpage does not load, please allow warm up by refreshing the page (F5, Ctrl+R). Once it's up, every webpage will load quickly.
 
-This also helps me guess when evaluators have visited my site, how thoroughly my project was evaluated (no of HTTP requests), and how long till my project gets accepted :)
+Also, I try to stop my Database server, but it automatically turns on again in 1 month. Please understand if User Acc auth & food records are not working.
+
+** If you want to test, mail me at nokhu.nag@gmail.com so I can turn these on **
